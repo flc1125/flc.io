@@ -25,7 +25,7 @@ cover: https://s.flc.io/202301171621594.png!blog
 
 ### 技术栈
 
-- [Github](https://github.com/flc1125/flc.io)：托管本博客内容、代码平台；自动化构建、发布。
+- [GitHub](https://github.com/flc1125/flc.io)：托管本博客内容、代码平台；自动化构建、发布。
 - [Hexo](https://hexo.io/)：博客基础框架
 - [hexo-theme-icarus](https://github.com/ppoffice/hexo-theme-icarus)：博客主题
 - [node](https://nodejs.org/)：JavaScript 运行环境
