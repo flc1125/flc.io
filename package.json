@@ -8,6 +8,9 @@
     "deploy": "hexo deploy",
     "server": "hexo server"
   },
+  "engines": {
+    "node": ">=20.19.0"
+  },
   "hexo": {
     "version": "8.1.1"
   },

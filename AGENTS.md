@@ -2,7 +2,7 @@
 
 ## Project Structure & Module Organization
 
-This repository is a Hexo 8 static blog for `https://flc.io`, primarily written in Chinese. Blog content lives in `source/_posts/`, usually grouped by year such as `source/_posts/2025/`. Drafts live in `source/_drafts/` and are not published until moved or published by Hexo. Static pages are under directories such as `source/about/` and `source/open-source/`. Site assets live in `source/assets/`, including `source/assets/css/style.css`. `source/labs/**` and `source/shared/**` are excluded from Hexo rendering via `_config.yml` and should be treated as standalone static content. Do not edit generated `public/` output directly.
+This repository is a Hexo 8 static blog for `https://flc.io`, primarily written in Chinese. Blog content lives in `source/_posts/`, usually grouped by year such as `source/_posts/2025/`. Drafts live in `source/_drafts/` and are not published until moved or published by Hexo. Static pages are under directories such as `source/about/` and `source/open-source/`. Site assets live in `source/assets/`. `source/labs/**` and `source/shared/**` are excluded from Hexo rendering via `_config.yml` and should be treated as standalone static content. Do not edit generated `public/` output directly.
 
 Project working notes live under `_docs/`. Use `_docs/_plans/` for task plans, phased checklists, and execution notes that help coordinate longer work. Use `_docs/_memories/` for reusable project context that should survive across long-running tasks.
 
@@ -36,7 +36,7 @@ toc: true
 ---
 ```
 
-Use two-space indentation in YAML arrays only when the surrounding file already does so; otherwise follow the existing no-indent list style. Keep CSS changes localized to `source/assets/css/style.css` unless a standalone static page owns its styles.
+Match the existing indentation style of the surrounding file for YAML arrays, such as four-space indentation in `_config.yml` or no-indent lists in post front matter. There is currently no shared custom CSS file; prefer theme configuration first, and only add a dedicated CSS asset when a site-wide style change needs it.
 
 ## Testing Guidelines
 
