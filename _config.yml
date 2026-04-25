@@ -79,10 +79,6 @@ sitemap:
     tags: true
     categories: true
 
-# Aplayer(https://github.com/MoePlayer/hexo-tag-aplayer/)
-aplayer:
-    meting: true
-
 # RSS
 feed:
     enable: true
