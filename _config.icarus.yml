@@ -52,7 +52,7 @@ navbar:
     links:
         Download on GitHub:
             icon: fab fa-github
-            url: 'https://github.com/flc1125/blog.flc.io'
+            url: 'https://github.com/flc1125/flc.io'
 footer:
     copyright: '<a href="https://beian.miit.gov.cn/" target="_blank">粤ICP备15063901号</a>'
     links:

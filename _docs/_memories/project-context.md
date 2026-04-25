@@ -50,6 +50,8 @@
   - `hexo-theme-icarus`: `^6.1.0` to `^6.1.1`
 - `hexo-theme-landscape` was removed because the site uses `theme: icarus` and
   no repository files reference Landscape outside dependency metadata.
+- The old `_config.landscape.yml` file was removed after the Landscape package
+  was removed.
 - `hexo-renderer-ejs` was removed because the active Icarus theme uses
   JSX/Inferno and the repository has no first-party `.ejs` templates.
 - `hexo-tag-aplayer` was removed because it is stale and pulled vulnerable
