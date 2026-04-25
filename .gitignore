@@ -6,4 +6,7 @@ node_modules/
 public/
 .deploy*/
 .idea
-_docs/
+
+# Track shared docs and memories, but keep individual plan files local.
+_docs/_plans/**
+!_docs/_plans/.gitkeep
