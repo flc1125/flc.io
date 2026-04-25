@@ -4,11 +4,11 @@
 
 This repository is a Hexo 8 static blog for `https://flc.io`, primarily written in Chinese. Blog content lives in `source/_posts/`, usually grouped by year such as `source/_posts/2025/`. Drafts live in `source/_drafts/` and are not published until moved or published by Hexo. Static pages are under directories such as `source/about/` and `source/open-source/`. Site assets live in `source/assets/`. `source/labs/**` and `source/shared/**` are excluded from Hexo rendering via `_config.yml` and should be treated as standalone static content. Do not edit generated `public/` output directly.
 
-Project working notes live under `_docs/`. Use `_docs/_plans/` for task plans, phased checklists, and execution notes that help coordinate longer work. Use `_docs/_memories/` for reusable project context that should survive across long-running tasks.
+Project working notes live under `_docs/`. Use `_docs/_plans/` for task plans, phased checklists, and execution notes that help coordinate longer work. The `_docs/_plans/` directory is tracked, but individual plan files are local-only and should stay ignored. Use `_docs/_memories/` for reusable project context that should survive across long-running tasks.
 
 ## Plans & Memories
 
-When working on a long task, read relevant files in `_docs/_plans/` and `_docs/_memories/` before making assumptions. If you discover generally useful project information during execution, dynamically update `_docs/_memories/` so future work can reuse it. Keep memories global and durable: prefer project conventions, dependency constraints, release practices, validation habits, and known architectural facts over one-off command logs or temporary status.
+When working on a long task, read relevant local files in `_docs/_plans/` and tracked files in `_docs/_memories/` before making assumptions. If you discover generally useful project information during execution, dynamically update `_docs/_memories/` so future work can reuse it. Keep memories global and durable: prefer project conventions, dependency constraints, release practices, validation habits, and known architectural facts over one-off command logs or temporary status.
 
 ## Build, Test, and Development Commands
 
