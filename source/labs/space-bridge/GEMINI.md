@@ -1,6 +1,6 @@
 # Gemini Context: Spacebridge
 
-**Spacebridge** is a lightweight "cloud clipboard" application designed to easily share text and files between devices using a temporary 6-digit code. It is a single-page application (SPA) embedded within the `blog.flc.io` project.
+**Spacebridge** is a lightweight "cloud clipboard" application designed to easily share text and files between devices using a temporary 6-digit code. It is a single-page application (SPA) embedded within the `flc.io` project.
 
 ## Project Overview
 
