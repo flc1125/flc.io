@@ -47,13 +47,17 @@
   - `hexo-renderer-marked`: `^7.0.0` to `^7.0.1`
   - `hexo-theme-icarus`: `^6.1.0` to `^6.1.1`
   - `hexo-theme-landscape`: `^1.0.0` to `^1.1.0`
-- `hexo-tag-aplayer` is old and still latest at `3.0.4`; it pulls vulnerable
+- `hexo-tag-aplayer` was removed because it is stale and pulled vulnerable
   older transitive dependencies through `hexo-fs`, `hexo-util`, `chokidar`,
   `micromatch`, `braces`, and `highlight.js`.
-- `hexo-admonition` is old and still latest at `1.1.2`; it pulls an older
-  `markdown-it` range.
-- For dependency work, prefer low-risk direct range and lockfile refreshes
-  first, then separately evaluate stale plugin replacement or npm `overrides`.
+- Two posts previously using `{% meting %}` no longer embed music players.
+- `hexo-admonition` was removed because no posts used its `!!!` syntax and it
+  pulled an older vulnerable `markdown-it` range.
+- npm `overrides` were tested for `hexo-tag-aplayer`, but broad overrides broke
+  plugin loading or Hexo/Icarus dependency checks. Prefer plugin replacement
+  over overrides for this specific package.
+- Current dependency cleanup target: `npm audit --package-lock-only` should
+  report 0 vulnerabilities after install.
 
 ## Verification Habits
 
@@ -67,6 +71,9 @@
   dependencies are installed.
 - For security work, separate findings that npm can fix through lockfile
   updates from findings that require plugin replacement or explicit overrides.
+- After removing music embeds, inspect generated `public/follow-your-dream/`
+  and `public/ponder/` output to confirm they no longer contain `meting-js`,
+  APlayer, or MetingJS resource tags.
 
 ## Branching Notes
 
