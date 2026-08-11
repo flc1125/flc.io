@@ -1,0 +1,31 @@
+{
+    "redirects": [
+        {
+            "source": "/(.*)",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "www.flc.io"
+                }
+            ],
+            "destination": "https://flc.io/$1",
+            "permanent": true
+        },
+        {
+            "source": "/(.*)",
+            "has": [
+                {
+                    "type": "host",
+                    "value": "blog.flc.io"
+                }
+            ],
+            "destination": "https://flc.io/$1",
+            "permanent": true
+        },
+        {
+            "source": "/labs/filament-manager/(.*)",
+            "destination": "https://fil.flc.io/$1",
+            "permanent": true
+        }
+    ]
+}
