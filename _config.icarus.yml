@@ -1,5 +1,6 @@
-version: 5.1.0
+version: 7.0.0
 variant: default
+appearance: light
 logo: 
     text: Flc゛
 head:
@@ -18,7 +19,6 @@ head:
                 type: image/jpg
     open_graph:
         title: 
-        type: blog
         url: 
         image: 
         site_name: 
@@ -27,7 +27,6 @@ head:
         twitter_card: 
         twitter_id: 
         twitter_site: 
-        google_plus: 
         fb_admins: 
         fb_app_id: 
     structured_data:
